@@ -1,0 +1,26 @@
+
+{   "name": "sage-php/ini",
+    "type": "library",
+    "version": "0.0.1",
+    "description": "Ini file manipulation. supports sections and comments",
+    "keywords": ["PHP", "INI", "ini file", "parser", "configuration"],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuno Costa",
+            "email": "nuno@francodacosta.com",
+            "homepage": "http://www.francodacosta.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+
+    "require-dev": {
+        "symfony/class-loader": "*"
+    }
+}
