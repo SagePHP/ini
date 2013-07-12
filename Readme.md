@@ -14,6 +14,11 @@ key = value ; bla bla
 ```
 will be preserved
 
+Installation
+------------
+```composer.phar require sage-php/ini dev-master```
+
+
 Usage
 -----
 ```
