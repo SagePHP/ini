@@ -26,7 +26,7 @@ if ($ini->hasSection('php')) {
 }
 
 if ($ini->hasKey('version', 'php')) {
-    echo 'php version:' $ini-get('version', 'php');
+    echo 'php version:' . $ini-get('version', 'php');
 }
 
 $ini->set($key = 'bar', $value = 'zed', $section = 'section', $comment = 'just a test');

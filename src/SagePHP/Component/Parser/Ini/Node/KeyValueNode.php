@@ -72,9 +72,11 @@ class KeyValueNode extends AbstractNode
      */
     private function processValue($value)
     {
-        $parts = explode(';', $value);
-        $value = trim($parts[0]);
-        $comment = isset($parts[1]) ? trim($parts[1]) : '';
+
+        $test = rtrim(trim($value), ';') . ';';
+        preg_match('/(".*"|.*?);(.*)/', $test, $matches);
+        $value = trim(isset($matches[1]) ? $matches[1] : $value);
+        $comment = isset($matches[2]) ? trim($matches[2], '; ') : '';
 
         return array($value, $comment);
     }
