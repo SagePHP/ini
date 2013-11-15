@@ -1,5 +1,4 @@
-
-{   "name": "sage-php/ini",
+{   "name": "sagephp/ini",
     "type": "library",
     "version": "0.0.1",
     "description": "Ini file manipulation. supports sections and comments",
